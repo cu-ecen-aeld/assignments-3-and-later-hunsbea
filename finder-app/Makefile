@@ -1,9 +1,5 @@
-CC := gcc
+CC := $(CROSS_COMPILE)gcc
 CFLAGS := -Wall -Wextra
-
-ifdef CROSS_COMPILE
-	CC := $(CROSS_COMPILE)gcc
-endif
 
 all: writer
 

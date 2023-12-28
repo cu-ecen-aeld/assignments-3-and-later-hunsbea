@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 WRITEFILE="${1}"
 WRITESTR="${2}"
