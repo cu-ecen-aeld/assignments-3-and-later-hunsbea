@@ -6,7 +6,7 @@ set -e
 set -u
 
 OUTDIR=/tmp/aeld
-TOOLCHAIN_DIR=/home/hunsbea/arm/gcc-arm-10.2-2020.11-x86_64-aarch64-none-linux-gnu
+TOOLCHAIN_DIR=$(dirname $(dirname $(which aarch64-none-linux-gnu-gcc)))
 KERNEL_REPO=git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 KERNEL_VERSION=v5.1.10
 BUSYBOX_VERSION=1_33_1
