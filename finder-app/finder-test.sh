@@ -11,7 +11,7 @@ WRITEDIR=/tmp/aeld-data
 OUTFILE=/tmp/assignment4-result.txt
 SCRIPTDIR=$(dirname "${0}")
 CONFDIR=/etc/finder-app/conf
-if [ -d ${SCRIPTDIR}/conf ]; then
+if [ -f ${SCRIPTDIR}/conf/username.txt ]; then
 	CONFDIR=${SCRIPTDIR}/conf
 fi
 username=$(cat ${CONFDIR}/username.txt)
